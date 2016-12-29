@@ -1,2 +1,2 @@
-# obs-template
+# obs-management
 OBS HTML Template
