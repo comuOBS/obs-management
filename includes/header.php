@@ -16,7 +16,7 @@
 	
 	$users_json=getApi($user_token,'http://127.0.0.1:8000/users/?format=json');
 	$lecturers_json=getApi($user_token,'http://127.0.0.1:8000/lecturers/?format=json');
-	$announcements_json=getApi($user_token,'http://127.0.0.1:8000/announcements/4/?format=json');
+	$announcements_json=getApi($user_token,'http://127.0.0.1:8000/announcements/2/?format=json');
 
 	for($i=0;$i<$users_json["count"];$i++)
 	{
@@ -107,7 +107,7 @@
                                     <span class="from">COMU</span>
                                     <span class="time"><?php echo $announcements_json["created_date"]; ?></span>
                                     </span>
-                                    <span class="message">
+                                    <span >
                                         <?php echo $announcements_json["title"]; ?>
                                     </span>
                                 </a>
